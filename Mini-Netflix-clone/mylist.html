@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Netflix Logo"></a></div>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">TV Shows</a></li>
+      <li><a href="#">Movies</a></li>
+      <li><a href="mylist.html">My List</a></li>
+    </ul>
+  </nav>
+
+  <div class="nav-right">
+    <input type="text" placeholder="Search..." class="search-box">
+
+    <i class="fa-solid fa-bell"></i>
+
+      <div class="btn" id="profileDropdown">
+        <button onclick="logout()">Logout</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <section class="movie-section">
+  <h2>My List</h2>
+  <div class="movie-row" id="favMovies"></div>
+</section>
+
+<section class="movie-section">
+    <div class="back-btn">
+    <a href="index.html"><button>GO BACK</button></a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <img src="images/logo.png" alt="">
+    <p>Mini Netflix Clone made with HTML, CSS, JavaScript and OMDb API.</p>
+  </div>
+
+  <div class="footer-links">
+    <div>
+      <h4>Explore</h4>
+      <a href="#">Home</a>
+      <a href="#">Movies</a>
+      <a href="#">TV Shows</a>
+      <a href="#">My List</a>
+    </div>
+
+    <div>
+      <h4>Support</h4>
+      <a href="#">Help Center</a>
+      <a href="#">FAQ</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+
+    <div>
+      <h4>Categories</h4>
+      <a href="#">Action</a>
+      <a href="#">Comedy</a>
+      <a href="#">Popular</a>
+      <a href="#">Trending</a>
+    </div>
+
+    <div>
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Mini Netflix Clone. All rights reserved.</p>
+    <p>Designed by Aditi Manhas </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

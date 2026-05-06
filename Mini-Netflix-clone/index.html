@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini Netflix Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Netflix Logo"></a></div>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#shows">TV Shows</a></li>
+      <li><a href="#second">Movies</a></li>
+      <li><a href="mylist.html">My List</a></li>
+    </ul>
+  </nav>
+
+  <div class="nav-right">
+    <input type="text" placeholder="Search..." class="search-box">
+    <i class="fa-solid fa-bell"></i>
+
+    <div class="btn">
+      <button onclick="logout()">
+        <i class="fa-solid fa-right-from-bracket"></i> Logout
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <p class="hero-tag">TRENDING NOW</p>
+    <h1>STRANGER THINGS</h1>
+    <p class="hero-text">
+      A small town uncovers mysteries involving secret experiments and supernatural forces.
+    </p>
+
+    <div class="hero-buttons">
+      <button class="play-btn" onclick="playVideo('https://www.youtube.com/embed/b9EkMc79ZSU')">▶ Play</button>
+      <button class="info-btn">ⓘ More Info</button>
+    </div>
+  </div>
+</section>
+
+<div class="video-popup" id="videoPopup">
+  <span class="close-btn" onclick="closeVideo()">
+    <i class="fa-solid fa-circle-xmark"></i>
+  </span>
+  <iframe id="videoFrame" src="" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div class="details-popup" id="detailsPopup">
+  <span class="close-btn" onclick="closeDetails()">
+    <i class="fa-solid fa-circle-xmark"></i>
+  </span>
+  <div class="details-content" id="detailsContent"></div>
+</div>
+
+<div class="search-popup" id="searchPopup">
+  <div class="search-content">
+    <span class="close-search" onclick="closeSearch()">
+      <i class="fa-solid fa-circle-xmark"></i>
+    </span>
+    <h2>Search Results</h2>
+    <div class="movie-row search-grid" id="searchResults"></div>
+  </div>
+</div>
+
+<section class="movie-section" id="second">
+  <h2>Trending Now</h2>
+  <div class="movie-row" id="movies"></div>
+</section>
+
+<section class="movie-section">
+  <h2>Popular on Netflix</h2>
+  <div class="movie-row" id="popularMovies"></div>
+</section>
+
+<section class="movie-section" id="shows">
+  <h2>TV Shows</h2>
+  <div class="movie-row" id="tvShows"></div>
+</section>
+
+<section class="movie-section">
+  <h2>Action Movies</h2>
+  <div class="movie-row" id="actionMovies"></div>
+</section>
+
+<section class="movie-section">
+  <h2>Comedy Movies</h2>
+  <div class="movie-row" id="comedyMovies"></div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <img src="images/logo.png" alt="Netflix Logo">
+    <p>Mini Netflix Clone made with HTML, CSS, JavaScript and OMDb API.</p>
+  </div>
+
+  <div class="footer-links">
+    <div>
+      <h4>Explore</h4>
+      <a href="index.html">Home</a>
+      <a href="#second">Movies</a>
+      <a href="#shows">TV Shows</a>
+      <a href="mylist.html">My List</a>
+    </div>
+
+    <div>
+      <h4>Support</h4>
+      <a href="#">Help Center</a>
+      <a href="#">FAQ</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+
+    <div>
+      <h4>Categories</h4>
+      <a href="#">Action</a>
+      <a href="#">Comedy</a>
+      <a href="#">Popular</a>
+      <a href="#">Trending</a>
+    </div>
+
+    <div>
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Mini Netflix Clone. All rights reserved.</p>
+    <p>Designed by Aditi Manhas</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

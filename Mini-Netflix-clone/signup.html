@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Netflix Sign Up</title>
+  <link rel="stylesheet" href="start.css">
+</head>
+<body>
+
+<div class="login-container">
+
+  <div class="login-box">
+
+<img src="images/logo.png" alt="" srcset="">
+
+    <h2>Sign Up</h2>
+
+    <input type="text" id="name" placeholder="Full Name">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="signup()">Create Account</button>
+
+    <p id="error"></p>
+
+    <p class="bottom-text">
+      Already have an account? 
+      <span onclick="goToLogin()">Sign in</span>
+    </p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
